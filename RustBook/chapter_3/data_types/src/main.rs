@@ -18,6 +18,30 @@ fn main() {
     println!("the value of b is {}",b);
     // let c: i64 = 45;
     // println!("the value of c is {}",c);
+}
+fn working_with_floats() {
+    let d = 2.0; // f64
+
+    let f: f32 = 3.0; // f32
+    println!("the floating values are {} {}", d, f)
+}
+
+fn numerical_operations() {
+    // addition
+    let sum = 5 + 10;
+    // subtraction
+    let difference = 95.5 - 4.3;
+
+    // multiplication
+    let product = 4 * 30;
+
+    // division
+    let quotient = 56.7 / 32.2;
+    let floored = 2 / 3; // Results in 0
+    // remainder
+    let remainder = 43 % 5;
+    println!("the sum{} the difference {} the product {} the quotient {} the floored {} the remainder {},",sum,difference,product,quotient,floored,remainder);
+}
 
 fn tuples() {
     let x: (i32, f64, u8) = (500, 6.4, 1);
