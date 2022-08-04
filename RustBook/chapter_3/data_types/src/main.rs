@@ -6,8 +6,36 @@ fn main() {
     // Rust has four scalar types : Integers | floats | string | boolean
 
     println!("Integers");
-    let x: u8 = u8::pow(2, 7)-1 ;
-    println!("the value of x is {}",x);
+    working_with_intergers();
+    //Working with floats
+    println!();
+    println!("Working with Floats ");
+    working_with_floats();
+
+    println!();
+    println!("Working with char ");
+    // working_with_floats();
+
+    println!();
+    println!("Working with Coumpond types | array and floats ");
+    // working_with_floats();
+
+    println!();
+    println!("Numerical Operations");
+    numerical_operations();
+
+    println!();
+    println!("Tuples and tuple unpacking");
+    tuples();
+
+    println!();
+    println!("working with arrays ");
+    array_index();
+}
+
+fn working_with_intergers() {
+    let x: u8 = u8::pow(2, 7) - 1;
+    println!("the value of x is {}", x);
     // let y: i8 = i8::pow(2, 8)-1;
     // println!("the value of y is {}",y);
     let z: u32 = u32::pow(2, 31) - 1;
