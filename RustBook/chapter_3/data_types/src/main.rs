@@ -19,6 +19,22 @@ fn main() {
     // let c: i64 = 45;
     // println!("the value of c is {}",c);
 
+fn tuples() {
+    let x: (i32, f64, u8) = (500, 6.4, 1);
+
+    let (five_00, six_4, one_1) = x;
+
+    let five_hundred = x.0;
+
+    let six_point_four = x.1;
+
+    let one = x.2;
+
+    println!(
+        "tuple x = {:#?} with {} at index 0, {} at index 1 and {} at index 2 ",
+        x, five_hundred, six_4, one
+    );
+}
 
 fn array_index() {
     let a = [1, 2, 3, 4, 5];
