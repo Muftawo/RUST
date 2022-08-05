@@ -33,3 +33,13 @@ fn multiple_conditions() {
     }
 }
 
+
+fn if_let_expressions() {
+    let condition = false;
+    let number = if condition { 5 } else { 6 };
+
+    // note because a varaible must have a decleared type we can not do this 
+    // let ans = if condition { 5 } else {"six"};
+
+    println!("The value of number is: {}", number);
+}
