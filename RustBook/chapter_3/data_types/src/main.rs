@@ -32,7 +32,8 @@ fn main() {
 
     println!();
     println!("working with arrays ");
-    array_index();
+    // array_index();
+    match_case();
 }
 
 fn working_with_intergers() {
@@ -91,9 +92,29 @@ fn tuples() {
 }
 
 fn array_index() {
-    let a = [1, 2, 3, 4, 5];
+    let arr = [1, 2, 3, 4, 5];
+
+    for val in arr {
+        println!( "{}", val);
+
+    }
+
+    let my_string = String::from("hello world");
+
+    // for letter in my_string.chars() {
+    //     println!("{}", letter);
+
+    // }
+
+    for (x,letter2) in my_string.chars().enumerate() {
+        println!("index{} , value {}",x, letter2);
+
+
+
 
     println!("Please enter an array index.");
+
+    // let arr :[f64, u8 , i32] = [35.3, 3, -10];// not possible 
 
     let mut index = String::new();
 
@@ -105,10 +126,25 @@ fn array_index() {
         .parse()
         .expect("Index entered was not a number");
 
-    let element = a[index];
+    let element = arr[index];
 
     println!(
         "The value of the element at index {} is: {}",
         index, element
     );
+}}
+
+
+fn match_case(){
+    let mut some_vector = vec![1, 2, 3, 4];
+    for i in 0..20{
+        let m = match some_vector.pop(){
+            Some(val) => "got_a_value".to_string(),
+            None => "none".to_string(),
+
+        };
+        println!("{m}")
+    }
 }
+
+
